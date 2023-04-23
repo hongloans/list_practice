@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import OrderedList from "./components/OrderedList";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <OrderedList data={data} />
+      </div>
     </div>
   );
 }
 
 export default App;
+
+const data = [
+  { id: "1", title: "string1", order: 1 },
+  { id: "2", title: "string2", order: 2 },
+  { id: "3", title: "string3", order: 3 },
+  { id: "4", title: "string4", order: 4 },
+];
